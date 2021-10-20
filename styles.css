@@ -188,7 +188,7 @@ a {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px;
+  margin: 12px 0.0001px;
 }
 
 .content {
@@ -207,7 +207,7 @@ a {
   order: 2;
   flex-grow: 0;
   margin: 12px 0.0001px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 ul {
