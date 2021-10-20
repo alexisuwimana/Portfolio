@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: black;
+  background-image: url('./images/occ-background-1.jpeg');
+}
+
+.logo {
+  position: static;
+  width: 150px;
+  height: 24px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0.01px 0.01px;
+}
+
+* { box-sizing: border-box; }
+
+a {
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+/* header */
+.header {
+  display: flex;
+  background-color: rgb(66, 63, 63);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header .logo {
+  display: flex;
+  float: left;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: flex;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: rgb(255, 255, 255);
+  display: flex;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
+  background: rgb(255, 255, 255);
+  content: '';
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon::before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon::after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
+  top: 0;
+}
+
+.headline {
+  background-image: url(./images/background/Group.png);
+  background-repeat: no-repeat;
+  background-position: right 0.1px bottom 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0.01px;
+  top: 92px;
+  margin-top: 30px;
+}
+
+.heading-1 {
+  position: static;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 120px;
+  font-family: crete Round, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0.001px;
+}
+
+.heading-2 {
+  position: static;
+  width: 100%;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0.0001px;
+}
+
+.content {
+  position: static;
+  width: 100%;
+  height: auto;
+  left: 24px;
+  top: 295px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0.0001px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  display: grid;
+  padding: 12px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+  .flex-item-right .flex-item-left {
+    flex: 100%;
+  }
+}
