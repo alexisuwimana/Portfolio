@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# portfolio project
+# Portfolio Project
 
 > this is my first portifolio.
 
@@ -12,8 +12,6 @@ home page for mobile skeleton
 
 - HTML 
 - CSS
-- No framwork used in this project
-
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
