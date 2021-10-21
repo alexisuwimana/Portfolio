@@ -222,7 +222,6 @@ li {
   padding: 12px;
 }
 
-
 /* Work section */
 
 .Works {
@@ -306,7 +305,7 @@ hr.works-line {
 }
 
 .stories-list-1 {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #8993A4;
   box-sizing: border-box;
   flex: none;
@@ -317,7 +316,7 @@ hr.works-line {
 
 .stories-list-2 {
   background: #FFFFFF;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   box-sizing: border-box;
   flex: none;
   order: 3;
