@@ -304,44 +304,18 @@ hr.works-line {
   line-height: 20px;
 }
 
-.stories-list-1 {
-  background: #fff;
-  border: 1px solid #8993a4;
-  box-sizing: border-box;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 0.0001px 12px;
+.stories-list-item {
+  grid-column-gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 20px;
 }
 
-.stories-list-2 {
-  background: #fff;
-  border: 1px solid #8993a4;
-  box-sizing: border-box;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 0.0001px 12px;
-}
-
-.stories-list-3 {
-  background: #fff;
-  border: 1px solid #8993a4;
-  box-sizing: border-box;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 0.0001px 12px;
-}
-
-.stories-list-4 {
-  background: #fff;
-  border: 1px solid #8993a4;
-  box-sizing: border-box;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 0.0001px 12px;
+.skills-center{
+  text-align: center;
 }
 
 /* button */
