@@ -366,11 +366,13 @@ hr.works-line {
 }
 
 .heading-para {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 24px; */
+  background-color: orange;
+  font-size: 24px;
 }
 
 .stories-list-article {
@@ -521,6 +523,96 @@ span {
 
 .skills-header {
   margin-right: 33px;
+}
+
+/* Contact Section */
+
+.contact-section {
+  width: 97vw;
+  height: 95%;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}
+
+.message-box {
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.form-container {
+  display: block;
+  text-align: center;
+  border-bottom: solid 1px #8d8d8f;
+}
+
+form {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form #btn-submit {
+  width: 131px;
+  height: 38px;
+  background: #ff6b00;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+form #btn-submit:hover {
+  background-color: crimson;
+}
+
+form #btn-submit:active {
+  background-color: rgb(12, 110, 56);
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  font-family: Inter, sans-serif;
+}
+
+textarea {
+  background-color: #dbd8d7;
+}
+
+input[type='text'],
+input[type='email'] {
+  border-bottom: solid 2px #dbd8d7;
+}
+
+.contact-social {
+  background: #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fc5a09;
+}
+
+.contact-social-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
