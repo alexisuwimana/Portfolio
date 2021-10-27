@@ -75,8 +75,8 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: flex;
-  float: right;
-  padding: 28px 20px;
+  float: left;
+  padding: 28px 150px;
   position: relative;
   user-select: none;
 }
@@ -530,7 +530,7 @@ span {
 .contact-section {
   width: 97vw;
   height: 95%;
-  background: #e5e5e5;
+  background: white;
   display: flex;
   flex-direction: column;
   padding-top: 45px;
@@ -551,7 +551,7 @@ span {
 .form-container {
   display: block;
   text-align: center;
-  border-bottom: solid 1px #8d8d8f;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 form {
@@ -599,11 +599,11 @@ textarea {
 
 input[type='text'],
 input[type='email'] {
-  border-bottom: solid 2px #dbd8d7;
+  border-bottom: solid 2px white;
 }
 
 .contact-social {
-  background: #e5e5e5;
+  background: fbf8f7;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fc5a09;
