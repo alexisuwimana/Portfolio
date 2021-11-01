@@ -14,7 +14,7 @@ home page for mobile skeleton
 - CSS
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](http://alexisuwimana.github.io/)
 
 
 ## Getting Started
