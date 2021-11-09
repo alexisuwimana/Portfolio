@@ -7,3 +7,9 @@ function toggleMenu (){
     selectMobileMenu[0].classList.toggle('hidden_class');
 }
 
+humbergerMenu[0].addEventListener('click',toggleMenu);
+xrosssMenu[0].addEventListener('click', toggleMenu);
+
+menuLink.forEach(link => {
+    link.addEventListener('click',toggleMenu);
+});
