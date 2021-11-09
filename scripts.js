@@ -6,3 +6,4 @@ const selectMobileMenu = document.getElementsByClassName('mobile_menu');
 function toggleMenu (){
     selectMobileMenu[0].classList.toggle('hidden_class');
 }
+
