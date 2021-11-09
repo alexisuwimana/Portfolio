@@ -85,12 +85,12 @@ function html_worksTemplate(index){
         <button class="btn btn02 items">See Project</button>';
 }
 
-document.addEventListener("DOMContentLoaded" > {
+document.addEventListener("DOMContentLoaded",function() {
   allContent.forEach((element) => {
     const dinContent = document.createDocumentFragment();
     const newArticle = document.createElement('article');
     newArticle.innerHTML = html_worksTemplate(element);
     dinContent.appendChild(newArticle);
     document.getElementById('work_cards').appendChild(dinContent);
-  });
+  })
 });
