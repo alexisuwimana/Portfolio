@@ -77,15 +77,15 @@ function html_worksTemplate(index){
           <h3 class="title subtitle">' + index.name + '</h3> \
           <p class="text text04 items">' + index.description + ' </p> \
           <ul class="languages lang02 items"> \
-            <li> <div class="lang_item lang_item06">' + index.technologies[0] + '</div> </li> \
-            <li> <div class="lang_item lang_item07">' + index.technologies[1] + '</div> </li>\
-            <li> <div class="lang_item lang_item08">' + index.technologies[2] + '</div> </li> \
+            <li> <div class="lang_item lang_item06">' + index.technologies[0] +'</div> </li> \
+            <li> <div class="lang_item lang_item07">' + index.technologies[1] +'</div> </li>\
+            <li> <div class="lang_item lang_item08">' + index.technologies[2] +'</div> </li> \
           </ul> \
           </div> \
         <button class="btn btn02 items">See Project</button>';
 }
 
-document.addEventListener('DOMContentLoaded', function article () {
+document.addEventListener('DOMContentLoaded', function article() {
   allContent.forEach((element) => {
     const dinContent = document.createDocumentFragment();
     const newArticle = document.createElement('article');
