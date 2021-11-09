@@ -51,8 +51,6 @@ body {
 .block {
   display: flex;
   color: white;
-
-  /* border: 5px solid goldenrod; */
 }
 
 header {
@@ -162,7 +160,7 @@ section {
 }
 
 .section01 {
-  background-image: url(images/Background.svg);
+  background-image: url(images/background/Background.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -232,7 +230,7 @@ ul {
 article {
   background:
     linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-    url(images/Card_background.png);
+    url(images/background/Card_background.png);
   background-repeat: no-repeat;
   max-width: 369px;
 }
@@ -510,7 +508,6 @@ footer .icon {
   }
 
   .section01 {
-    /* background-image: url(images/Illustration-header.svg); */
     flex-flow: row;
     align-items: center;
     padding-block: 192px;
@@ -608,7 +605,7 @@ footer .icon {
   }
 
   #work_cards > article:hover {
-    background: url(images/Card_background.png);
+    background: url(images/background/Card_background.png);
     cursor: pointer;
   }
 
@@ -675,3 +672,30 @@ footer .icon {
     background-position: top 100px right;
   }
 }
+
+
+.mobile_menu {
+  height: 100vh;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.mobile_menu > ul > li > a {
+  text-decoration: none;
+  color: #fff5e1;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Inter;
+}
+
+.mobile_menu > ul >li {
+  margin-top: 40px;
+  border-bottom: solid 1px #fff5e1;
+}
+.mobile_menu >a >img {
+  float: right;
+}
+.hidden_class {
+  display: none;
+}
+

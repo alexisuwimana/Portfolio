@@ -18,9 +18,24 @@
 </script>
 
   <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Alexis Portfolio</title>
 </head>
 <body>
+
+  <div class="mobile_menu hidden_class">
+    <a><img class="xross_menu" src="./images/icons/Icon.png" alt="icon"></a>
+    <ul class="mainMenu">
+        <li class="closeLink"><a href="#work_section">Portifolio</a></li>
+        <li class="closeLink"><a href="#about_me">About</a></li>
+        <li class="closeLink"><a href="#form_section">Contact</a></li>
+    </ul>
+</div>
+
+
+
+
+
   <header class="block">
     <a class="name">Alexis NIYO</a>
     <nav class="nav_bar">
@@ -28,7 +43,7 @@
         <li><a href="#work_section" class="nav_link">Portfolio</a></li>
         <li><a href="#about_header" class="nav_link">About</a></li>
         <li><a href="#form_header" class="nav_link">Contact</a></li>
-        <li><a href="mailto:leonardopareja.fl@hotmail.com" class="nav_link"><img src="images/icons/Icon_Mail.svg" alt=""></a></li>
+        <li><a href="mailto:alexisuwimana@gmail.com" class="nav_link"><img src="images/icons/Icon_Mail.svg" alt=""></a></li>
       </ul>
       <img class="menu" src="images/icons/Menu_icon.svg" alt="menu icon">
     </nav>
@@ -60,7 +75,7 @@
         <hr class="separator">
       </div>
       <div id="work_cover">
-        <img src="images/Img_Placeholder.png" alt="Cover_image" class="cover">
+        <img src="images/placeholder/Img_Placeholder.png" alt="Cover_image" class="cover">
         <article class="card01">
           <h3 class="title subtitle font_black">Multi-Post Stories</h3>
           <p class="text text03 items">A daily selection of privately personalized reads; 
@@ -164,7 +179,7 @@
         </article>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about_me">
       <div id="about_header">
         <h4 class="title title01 items">
           About me
@@ -229,5 +244,7 @@
     </ul>
     <hr id="finish">
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
