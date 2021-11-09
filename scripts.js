@@ -20,7 +20,6 @@ menuLink.forEach((link) => {
   link.addEventListener('click', toggleMenu);
 });
 
-
 const content01 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -28,7 +27,7 @@ const content01 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+ };
 const content02 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -36,7 +35,7 @@ const content02 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+ };
 const content03 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -44,7 +43,7 @@ const content03 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+ };
 const content04 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -52,7 +51,7 @@ const content04 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+ };
 const content05 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -60,7 +59,7 @@ const content05 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+ };
 const content06 = {
   name: 'Multi-Post Stories',
   description: ' A daily selection of privately personalized reads;"no accounts or sign-ups required. has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -68,7 +67,7 @@ const content06 = {
   technologies: ['html', 'bootstrap', 'ruby'],
   linkLive: '',
   link2Source:''
-};
+  };
 
 const allContent = [content01, content02, content03,content04,content05,content06];
 
