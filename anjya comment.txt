@@ -1,0 +1,78 @@
+function modal_window_template (index) {
+  return ' \
+  <div class="modal_window_content> \
+    <img class="close_btn" src='+index.closeBtn+'> \
+    <div class="modal_heading"> \
+    <h3 class="modal_heading">'+index.name+'</h3> \
+    <a class="button" href="#">See Live</a> \
+    <a class="button" href="#">See Source</a> \
+    </div> \
+    <ul class="lang_container"> \
+      <li class="language_btn">'+index.technologies[0]+'</li> \
+      <li class="language_btn">'+index.technologies[1]+'</li> \
+      <li class="language_btn">'+index.technologies[2]+'</li> \
+      <li class="language_btn">'+index.technologies[3]+'</li> \
+      <li class="language_btn">'+index.technologies[4]+'</li> \
+      <li class="language_btn">'+index.technologies[5]+'</li> \
+    </ul> \
+    <p class="button" href="#">'+index.description+'</p>';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  projects.forEach((element) => {
+    let dinContent = document.createDocumentFragment();
+    var newDiv = document.createElement('div');
+    newDiv.className = 'works_card';
+
+    newDiv.innerHTML = html_worksTemplate(element);
+    dinContent.appendChild(newDiv);
+    document.getElementById('projects').appendChild(dinContent);
+  });
+  const open_modal = document.querySelectorAll('.button');
+
+  console.log(open_modal);
+  open_modal.forEach((btn, i) => {
+    console.log(btn);
+    btn.addEventListener('click', () => {
+      console.log(projects[i], i);
+      let modalContent = document.createDocumentFragment();
+      let newCont = document.createElement('div');
+      newCont.className = 'modal_window_container';
+      newCont.innerHTML = modal_window_template(projects[i]);
+      modalContent.appendChild(newCont);
+      document.getElementById('projects').appendChild(modalContent);
+    })
+  });
+});
+
+
+
+
+
+css
+
+
+/* Modal Window */
+
+.modal_window_container {
+  background: red;
+    position: fixed;
+    top: 0;
+    margin-left: 25%;
+    height: 1083px;
+    width: 920px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_heading {
+  display: flex;
+}
+
+.close_btn {
+  float: right;
+  height: 50px;
+}
