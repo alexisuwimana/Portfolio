@@ -79,13 +79,13 @@ function html_worksTemplate(index){
           <ul class="languages lang02 items"> \
             <li> <div class="lang_item lang_item06">' + index.technologies[0] + '</div> </li> \
             <li> <div class="lang_item lang_item07">' + index.technologies[1] + '</div> </li>\
-            <li> <div class="lang_item lang_item08">' + index.technologies[2] + '</div> </li> \
+            <li> <div class="lang_item lang_item08">' +index.technologies[2]+ '</div> </li> \
           </ul> \
           </div> \
         <button class="btn btn02 items">See Project</button>';
 }
 
-document.addEventListener("DOMContentLoaded",function () {
+document.addEventListener("DOMContentLoaded" > {
   allContent.forEach((element) => {
     const dinContent = document.createDocumentFragment();
     const newArticle = document.createElement('article');
