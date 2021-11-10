@@ -78,7 +78,7 @@ function html_worksTemplate(index){
           <p class="text text04 items">' + index.description + '</p> \
           <ul class="languages lang02 items"> \
             <li> <div class="lang_item lang_item06">' + index.technologies[0] + '</div> </li> \
-            <li> <div class="lang_item lang_item07">' + index.technologies[1] + '</div> </li>\
+            <li> <div class="lang_item lang_item07">' + index.technologies[1] + '</div> </li> \
             <li> <div class="lang_item lang_item08">' + index.technologies[2] + '</div> </li> \
           </ul> \
           </div> \
