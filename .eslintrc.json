@@ -1,25 +1,32 @@
+ 
+Configure linters environment for this project.
+main (#8)
+@TheLuisAbarcaTheLuisAbarca committed 17 hours ago
+commit 29cb20435621322bd3b6aa2df3ab1511e18e1e24
+25  .eslintrc.json 
+@@ -0,0 +1,25 @@
 {
-    "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true
-    },
-    "parser": "babel-eslint",
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "extends": ["airbnb-base"],
-    "rules": {
-      "no-shadow": "off",
-      "no-param-reassign": "off",
-      "eol-last": "off",
-      "import/extensions": [ 1, {
-        "js": "always", "json": "always"
-      }]
-    },
-    "ignorePatterns": [
-      "dist/",
-      "build/"
-    ]
-  }
+   "env": {
+     "browser": true,
+     "es6": true,
+     "jest": true
+   },
+   "parser": "babel-eslint",
+   "parserOptions": {
+     "ecmaVersion": 2018,
+     "sourceType": "module"
+   },
+   "extends": ["airbnb-base"],
+   "rules": {
+     "no-shadow": "off",
+     "no-param-reassign": "off",
+     "eol-last": "off",
+     "import/extensions": [ 1, {
+       "js": "always", "json": "always"
+     }]
+   },
+   "ignorePatterns": [
+     "dist/",
+     "build/"
+   ]
+ }
